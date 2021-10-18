@@ -1,7 +1,7 @@
 {
   "iisSettings": {
     "windowsAuthentication": true,
-    "anonymousAuthentication": false,
+    "anonymousAuthentication": true,
     "iisExpress": {
       "applicationUrl": "http://localhost:28290",
       "sslPort": 44341
@@ -16,7 +16,7 @@
         "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
       }
     },
-    "ClasificadorDeFigurasGeometricas": {
+    "CFG.Web": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
