@@ -7,22 +7,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace CFG.Web.Controllers.Api
 {
-    [Route("api/[controller]")]
+    [Route("api/clasificar")]
     [ApiController]
     public class ClasificadorController : ControllerBase
     {
-        // POST api/<ClasificadorController>
-        [HttpGet]
-        public IActionResult Get()
-        {
-            return Ok("GET RESPONSE BODY CONTENT");
-        }
-
-        // POST api/<ClasificadorController>
         [HttpPost]
         public IActionResult Post([FromBody] List<decimal> mediciones)
         {
@@ -33,7 +23,6 @@ namespace CFG.Web.Controllers.Api
             resultado.Perimetro = figura.CalcularPerimetro();
             resultado.Area = figura.CalcularArea();
 
-            //return Ok("POST RESPONSE BODY CONTENT");
             return Ok(resultado);
         }
     }

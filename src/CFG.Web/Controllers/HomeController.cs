@@ -1,4 +1,5 @@
-﻿using ClasificadorDeFigurasGeometricas.Models;
+﻿using CFG.Web.Models;
+using ClasificadorDeFigurasGeometricas.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -20,7 +21,15 @@ namespace ClasificadorDeFigurasGeometricas.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            _logger.LogInformation("index page executed");
+
+            var model = new CFGVisualizationModel();
+            model.Figuras.Add("Triangulo");
+            model.Figuras.Add("Rectangulo");
+            model.Figuras.Add("Pentagono");
+            model.Figuras.Add("Trapecio");
+
+            return View(model);
         }
 
         public IActionResult Privacy()
