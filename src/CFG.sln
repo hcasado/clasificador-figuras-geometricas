@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CFG.Common", "CFG.Common\CF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CFG.Web", "CFG.Web\CFG.Web.csproj", "{78580C6C-E46D-4D62-8A4D-F630E176770C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CFG.Generator", "CFG.Generator\CFG.Generator.csproj", "{3DEB9205-B3CC-45B4-8EA0-87787CB6721D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{78580C6C-E46D-4D62-8A4D-F630E176770C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78580C6C-E46D-4D62-8A4D-F630E176770C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78580C6C-E46D-4D62-8A4D-F630E176770C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DEB9205-B3CC-45B4-8EA0-87787CB6721D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DEB9205-B3CC-45B4-8EA0-87787CB6721D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DEB9205-B3CC-45B4-8EA0-87787CB6721D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DEB9205-B3CC-45B4-8EA0-87787CB6721D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
